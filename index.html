@@ -238,6 +238,18 @@
     }
 
     /* Credentials */
+    .credentials {
+      display: flex;
+      flex-direction: column;
+    }
+    .credentials-scroll {
+      flex: 1;
+      overflow-y: auto;
+      max-height: 470px;
+      padding-right: 0.5rem;
+      scrollbar-width: thin;
+      scrollbar-color: var(--teal) transparent;
+    }
     .credential-item {
       display: flex;
       flex-direction: column;
@@ -374,22 +386,6 @@
       .card, .card-image-wrap img { transition: none; }
     }
 
-    /* ── IMAGE PLACEHOLDER ── */
-    .placeholder-inner {
-      display: flex; flex-direction: column; align-items: center; gap: 0.45rem;
-    }
-    .placeholder-inner svg { color: rgba(56,178,172,0.3); }
-    .placeholder-inner span {
-      font-family: 'Inter', sans-serif;
-      font-size: 0.78rem; color: rgba(140,140,140,0.55);
-    }
-    .placeholder-inner code {
-      font-family: 'JetBrains Mono', monospace;
-      font-size: 0.68rem; color: rgba(56,178,172,0.45);
-      background: rgba(56,178,172,0.07);
-      padding: 0.15rem 0.45rem; border-radius: 3px;
-      border: 1px solid rgba(56,178,172,0.15);
-    }
   </style>
 </head>
 <body>
@@ -590,51 +586,79 @@
       <div class="credentials">
         <p style="font-family:'JetBrains Mono',monospace;font-size:0.75rem;color:var(--teal);letter-spacing:0.1em;text-transform:uppercase;margin-bottom:1rem;">Credentials</p>
 
-        <div class="credential-item">
-          <div class="credential-header">
-            <span class="credential-title">Concurrency in Go</span>
-            <span class="credential-date">Apr 2026</span>
+        <div class="credentials-scroll">
+          <div class="credential-item">
+            <div class="credential-header">
+              <span class="credential-title">Concurrency in Go</span>
+              <span class="credential-date">Apr 2026</span>
+            </div>
+            <span class="credential-issuer">University of California, Irvine — Coursera</span>
+            <span class="credential-id">ID: 1EAS2234DIOW</span>
           </div>
-          <span class="credential-issuer">University of California, Irvine — Coursera</span>
-          <span class="credential-id">ID: 1EAS2234DIOW</span>
-        </div>
 
-        <div class="credential-item">
-          <div class="credential-header">
-            <span class="credential-title">Writing, Running, and Fixing Code in C</span>
-            <span class="credential-date">Apr 2026</span>
+          <div class="credential-item">
+            <div class="credential-header">
+              <span class="credential-title">Writing, Running, and Fixing Code in C</span>
+              <span class="credential-date">Apr 2026</span>
+            </div>
+            <span class="credential-issuer">Duke University — Coursera</span>
+            <span class="credential-id">ID: NWJBAKR6T4WF</span>
           </div>
-          <span class="credential-issuer">Duke University — Coursera</span>
-          <span class="credential-id">ID: NWJBAKR6T4WF</span>
-        </div>
 
-        <div class="credential-item">
-          <div class="credential-header">
-            <span class="credential-title">ISO 14971:2019 Risk Management for Medical Devices</span>
-            <span class="credential-date">Oct 2025</span>
+          <div class="credential-item">
+            <div class="credential-header">
+              <span class="credential-title">ISO 14971:2019 Risk Management for Medical Devices</span>
+              <span class="credential-date">Oct 2025</span>
+            </div>
+            <span class="credential-issuer">BSI Training Academy</span>
+            <span class="credential-id">ID: ENR-01872428</span>
           </div>
-          <span class="credential-issuer">BSI</span>
-          <span class="credential-id">ID: ENR-01872428</span>
-        </div>
 
-        <div class="credential-item">
-          <div class="credential-header">
-            <span class="credential-title">Functions, Methods, and Interfaces in Go</span>
-            <span class="credential-date">Apr 2023</span>
+          <div class="credential-item">
+            <div class="credential-header">
+              <span class="credential-title">Software Testing Methodology and Tools</span>
+              <span class="credential-date">Sep 2024</span>
+            </div>
+            <span class="credential-issuer">iSpan 資展國際</span>
+            <span class="credential-id">ID: SE204654</span>
           </div>
-          <span class="credential-issuer">University of California, Irvine — Coursera</span>
-          <span class="credential-id">ID: 7SUDYVQQN4NN</span>
-        </div>
 
-        <div class="credential-item">
-          <div class="credential-header">
-            <span class="credential-title">Fundamentals of Engineering (FE)</span>
-            <span class="credential-date">Oct 2015</span>
+          <div class="credential-item">
+            <div class="credential-header">
+              <span class="credential-title">Cyber Security for Medical Devices</span>
+              <span class="credential-date">Sep 2024</span>
+            </div>
+            <span class="credential-issuer">ITRI</span>
+            <span class="credential-id">ID: 2323100052019</span>
           </div>
-          <span class="credential-issuer">Illinois Department of Financial and Professional Regulation</span>
-          <span class="credential-id">ID: 061038694</span>
-        </div>
 
+          <div class="credential-item">
+            <div class="credential-header">
+              <span class="credential-title">Functions, Methods, and Interfaces in Go</span>
+              <span class="credential-date">Apr 2023</span>
+            </div>
+            <span class="credential-issuer">University of California, Irvine — Coursera</span>
+            <span class="credential-id">ID: 7SUDYVQQN4NN</span>
+          </div>
+
+          <div class="credential-item">
+            <div class="credential-header">
+              <span class="credential-title">IoT Application Engineer - Associate Level</span>
+              <span class="credential-date">Jan 2021</span>
+            </div>
+            <span class="credential-issuer">Industrial Professional Assessment System (iPAS)</span>
+            <span class="credential-id">ID: B-l11-0618-2021</span>
+          </div>
+
+          <div class="credential-item">
+            <div class="credential-header">
+              <span class="credential-title">Fundamentals of Engineering (FE)</span>
+              <span class="credential-date">Oct 2015</span>
+            </div>
+            <span class="credential-issuer">Illinois Department of Financial and Professional Regulation</span>
+            <span class="credential-id">ID: 061038694</span>
+          </div>
+        </div>
       </div>
 
       <!-- Japanese Quiz App -->
@@ -650,7 +674,7 @@
           <div class="side-project-body">
             <h3 class="side-project-title">AI-Powered Japanese Grammar Quiz</h3>
             <p class="side-project-desc">A browser-based language learning tool that generates adaptive grammar quizzes
-            using the Groq API and plays native-quality pronunciation audio via Typecast TTS —
+            using the Groq API and plays native-quality pronunciation audio via Typecast AI —
             built as a personal side project to support daily Japanese study.</p>
             <div class="card-tags">
               <span class="tag">JavaScript</span>
