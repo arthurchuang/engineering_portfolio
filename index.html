@@ -245,7 +245,7 @@
     .credentials-scroll {
       flex: 1;
       overflow-y: auto;
-      max-height: 470px;
+      max-height: 510px;
       padding-right: 0.5rem;
       scrollbar-width: thin;
       scrollbar-color: var(--teal) transparent;
@@ -386,6 +386,21 @@
       .card, .card-image-wrap img { transition: none; }
     }
 
+    /* ── PROJECT LINK ── */
+    .project-link {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.75rem;
+      color: var(--teal);
+      text-decoration: none;
+      letter-spacing: 0.05em;
+      margin-top: 0.75rem;
+      display: inline-block;
+    }
+
+    .project-link:hover {
+      text-decoration: underline;
+    }
+
   </style>
 </head>
 <body>
@@ -426,7 +441,7 @@
   <div class="section" id="projects">
     <div class="section-header">
       <span class="section-label">work</span>
-      <h2 class="section-title">Engineering Portfolio</h2>
+      <h2 class="section-title">Portfolio</h2>
       <div class="section-rule"></div>
     </div>
 
@@ -589,15 +604,6 @@
         <div class="credentials-scroll">
           <div class="credential-item">
             <div class="credential-header">
-              <span class="credential-title">Concurrency in Go</span>
-              <span class="credential-date">Apr 2026</span>
-            </div>
-            <span class="credential-issuer">University of California, Irvine — Coursera</span>
-            <span class="credential-id">ID: 1EAS2234DIOW</span>
-          </div>
-
-          <div class="credential-item">
-            <div class="credential-header">
               <span class="credential-title">Writing, Running, and Fixing Code in C</span>
               <span class="credential-date">Apr 2026</span>
             </div>
@@ -607,11 +613,65 @@
 
           <div class="credential-item">
             <div class="credential-header">
+              <span class="credential-title">Concurrency in Go</span>
+              <span class="credential-date">Apr 2026</span>
+            </div>
+            <span class="credential-issuer">University of California, Irvine — Coursera</span>
+            <span class="credential-id">ID: 1EAS2234DIOW</span>
+          </div>
+
+          <div class="credential-item">
+            <div class="credential-header">
+              <span class="credential-title">GenAI & AI Agent for QA Automation</span>
+              <span class="credential-date">Mar 2026</span>
+            </div>
+            <span class="credential-issuer">Udemy</span>
+            <span class="credential-id">ID: UC-435d48b9-e747-41b8-8ea9-6558f9b66566</span>
+          </div>
+
+          <div class="credential-item">
+            <div class="credential-header">
+              <span class="credential-title">Introduction to AI Automation with n8n & LangChan</span>
+              <span class="credential-date">Mar 2026</span>
+            </div>
+            <span class="credential-issuer">Udemy</span>
+            <span class="credential-id">ID: UC-1cd8c5cd-f1db-4be0-b3ad-77149e30ad5c</span>
+          </div>
+
+          <div class="credential-item">
+            <div class="credential-header">
+              <span class="credential-title">Unit Testing & Other Embedded Software Catalysts</span>
+              <span class="credential-date">Dec 2025</span>
+            </div>
+            <span class="credential-issuer">Udemy</span>
+            <span class="credential-id">ID: UC-f76ac222-7e75-4b55-b21d-2528eef68e6f</span>
+          </div>
+
+          <div class="credential-item">
+            <div class="credential-header">
               <span class="credential-title">ISO 14971:2019 Risk Management for Medical Devices</span>
               <span class="credential-date">Oct 2025</span>
             </div>
             <span class="credential-issuer">BSI Training Academy</span>
             <span class="credential-id">ID: ENR-01872428</span>
+          </div>
+
+          <div class="credential-item">
+            <div class="credential-header">
+              <span class="credential-title">Pharma CSV & Quality</span>
+              <span class="credential-date">Jun 2025</span>
+            </div>
+            <span class="credential-issuer">Udemy</span>
+            <span class="credential-id">ID: UC-decfa374-2ced-464c-99c8-377d09cc2de6</span>
+          </div>
+
+          <div class="credential-item">
+            <div class="credential-header">
+              <span class="credential-title">IEC62304 SDLC for Medical Devices</span>
+              <span class="credential-date">Feb 2025</span>
+            </div>
+            <span class="credential-issuer">Industrial Technology Research Institute (ITRI)</span>
+            <span class="credential-id">ID: 2324050027013</span>
           </div>
 
           <div class="credential-item">
@@ -628,7 +688,7 @@
               <span class="credential-title">Cyber Security for Medical Devices</span>
               <span class="credential-date">Sep 2024</span>
             </div>
-            <span class="credential-issuer">ITRI</span>
+            <span class="credential-issuer">Industrial Technology Research Institute (ITRI)</span>
             <span class="credential-id">ID: 2323100052019</span>
           </div>
 
@@ -682,6 +742,9 @@
               <span class="tag">Typecast AI</span>
               <span class="tag">GitHub Actions</span>
             </div>
+            <a href="https://arthurchuang.github.io/japanese_quiz/" target="_blank" rel="noopener" class="project-link">
+              日本語を勉強しましょう ➜
+            </a>
           </div>
         </div>
 
@@ -766,7 +829,7 @@
   </div>
 
   <footer>
-    Built with a passion for engineering a better world &nbsp;·&nbsp; Arthur
+    Built with a passion for engineering &nbsp;·&nbsp; Arthur
   </footer>
 
 </body>
